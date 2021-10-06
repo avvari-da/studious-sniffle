@@ -1,6 +1,6 @@
 import { Weather, WeatherLocation } from "../model/Weather";
 
-const key: string = "20e9827bda583803eba755c62889a94f"; //process.env.REACT_APP_OPEN_WEATHER_API_KEY as string;
+const key: string = process.env.REACT_APP_OPEN_WEATHER_API_KEY as string;
 
 if (key === undefined) {
   throw new Error('No Open Weather API Key defined - ensure you set a variable called REACT_APP_OPEN_WEATHER_API_KEY')
